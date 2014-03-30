@@ -7,11 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B53291718E7D3390017EE3E /* NonProfitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B53291618E7D3390017EE3E /* NonProfitViewController.m */; };
 		0B53291A18E7D9E00017EE3E /* Cityscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291918E7D9E00017EE3E /* Cityscape.png */; };
 		0B53291E18E7DB280017EE3E /* pauperless_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291B18E7DB280017EE3E /* pauperless_black.png */; };
 		0B53291F18E7DB280017EE3E /* pauperless_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291C18E7DB280017EE3E /* pauperless_white.png */; };
 		0B53292018E7DB280017EE3E /* pauperless.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291D18E7DB280017EE3E /* pauperless.png */; };
+		0B53292518E7DC930017EE3E /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B53292218E7DC930017EE3E /* AddItemViewController.m */; };
+		0B53292618E7DC930017EE3E /* NonProfitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B53292418E7DC930017EE3E /* NonProfitViewController.m */; };
+		0BABB54618E7EEB30041EBE2 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABB54518E7EEB30041EBE2 /* ItemCell.m */; };
+		0BABB54818E7F4580041EBE2 /* sidewalk.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB54718E7F4580041EBE2 /* sidewalk.png */; };
+		0BABB54B18E7F78F0041EBE2 /* ItemDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */; };
+		0BABB55F18E7FCDA0041EBE2 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB54D18E7FCDA0041EBE2 /* AppIcon29x29.png */; };
+		0BABB56018E7FCDA0041EBE2 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB54E18E7FCDA0041EBE2 /* AppIcon29x29@2x.png */; };
+		0BABB56118E7FCDA0041EBE2 /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB54F18E7FCDA0041EBE2 /* AppIcon40x40.png */; };
+		0BABB56218E7FCDA0041EBE2 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55018E7FCDA0041EBE2 /* AppIcon40x40@2x.png */; };
+		0BABB56318E7FCDA0041EBE2 /* AppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55118E7FCDA0041EBE2 /* AppIcon50x50.png */; };
+		0BABB56418E7FCDA0041EBE2 /* AppIcon50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55218E7FCDA0041EBE2 /* AppIcon50x50@2x.png */; };
+		0BABB56518E7FCDA0041EBE2 /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55318E7FCDA0041EBE2 /* AppIcon57x57.png */; };
+		0BABB56618E7FCDA0041EBE2 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55418E7FCDA0041EBE2 /* AppIcon57x57@2x.png */; };
+		0BABB56718E7FCDA0041EBE2 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55518E7FCDA0041EBE2 /* AppIcon60x60.png */; };
+		0BABB56818E7FCDA0041EBE2 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55618E7FCDA0041EBE2 /* AppIcon60x60@2x.png */; };
+		0BABB56918E7FCDA0041EBE2 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55718E7FCDA0041EBE2 /* AppIcon72x72.png */; };
+		0BABB56A18E7FCDA0041EBE2 /* AppIcon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55818E7FCDA0041EBE2 /* AppIcon72x72@2x.png */; };
+		0BABB56B18E7FCDA0041EBE2 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55918E7FCDA0041EBE2 /* AppIcon76x76.png */; };
+		0BABB56C18E7FCDA0041EBE2 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55A18E7FCDA0041EBE2 /* AppIcon76x76@2x.png */; };
+		0BABB56D18E7FCDA0041EBE2 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55B18E7FCDA0041EBE2 /* iTunesArtwork.png */; };
+		0BABB56E18E7FCDA0041EBE2 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB55C18E7FCDA0041EBE2 /* iTunesArtwork@2x.png */; };
+		0BABB57318E7FE5A0041EBE2 /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB57118E7FE5A0041EBE2 /* background1.jpg */; };
+		0BABB57418E7FE5A0041EBE2 /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB57218E7FE5A0041EBE2 /* background2.jpg */; };
+		0BABB57718E806D40041EBE2 /* RegisterTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABB57618E806D40041EBE2 /* RegisterTypeViewController.m */; };
 		0BFA501018E770F4005EEEF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA500F18E770F4005EEEF1 /* Foundation.framework */; };
 		0BFA501218E770F4005EEEF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA501118E770F4005EEEF1 /* CoreGraphics.framework */; };
 		0BFA501418E770F4005EEEF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA501318E770F4005EEEF1 /* UIKit.framework */; };
@@ -37,7 +60,6 @@
 		0BFA505718E78A69005EEEF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA505618E78A69005EEEF1 /* SystemConfiguration.framework */; };
 		0BFA505F18E78C75005EEEF1 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA505E18E78C75005EEEF1 /* RegistrationViewController.m */; };
 		0BFA506018E78EE7005EEEF1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA505818E78AA6005EEEF1 /* Parse.framework */; };
-		0BFA506618E7A551005EEEF1 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA506518E7A551005EEEF1 /* AddItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +73,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B53291518E7D3390017EE3E /* NonProfitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NonProfitViewController.h; path = ../NonProfitViewController.h; sourceTree = "<group>"; };
-		0B53291618E7D3390017EE3E /* NonProfitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NonProfitViewController.m; path = ../NonProfitViewController.m; sourceTree = "<group>"; };
 		0B53291918E7D9E00017EE3E /* Cityscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cityscape.png; path = Assets/Cityscape.png; sourceTree = "<group>"; };
 		0B53291B18E7DB280017EE3E /* pauperless_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauperless_black.png; path = Assets/pauperless_black.png; sourceTree = "<group>"; };
 		0B53291C18E7DB280017EE3E /* pauperless_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauperless_white.png; path = Assets/pauperless_white.png; sourceTree = "<group>"; };
 		0B53291D18E7DB280017EE3E /* pauperless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauperless.png; path = Assets/pauperless.png; sourceTree = "<group>"; };
+		0B53292118E7DC930017EE3E /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		0B53292218E7DC930017EE3E /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
+		0B53292318E7DC930017EE3E /* NonProfitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonProfitViewController.h; sourceTree = "<group>"; };
+		0B53292418E7DC930017EE3E /* NonProfitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonProfitViewController.m; sourceTree = "<group>"; };
+		0BABB54418E7EEB30041EBE2 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		0BABB54518E7EEB30041EBE2 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		0BABB54718E7F4580041EBE2 /* sidewalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidewalk.png; path = Assets/sidewalk.png; sourceTree = "<group>"; };
+		0BABB54918E7F78F0041EBE2 /* ItemDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetails.h; sourceTree = "<group>"; };
+		0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetails.m; sourceTree = "<group>"; };
+		0BABB54D18E7FCDA0041EBE2 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		0BABB54E18E7FCDA0041EBE2 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		0BABB54F18E7FCDA0041EBE2 /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon40x40.png; sourceTree = "<group>"; };
+		0BABB55018E7FCDA0041EBE2 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		0BABB55118E7FCDA0041EBE2 /* AppIcon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon50x50.png; sourceTree = "<group>"; };
+		0BABB55218E7FCDA0041EBE2 /* AppIcon50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon50x50@2x.png"; sourceTree = "<group>"; };
+		0BABB55318E7FCDA0041EBE2 /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
+		0BABB55418E7FCDA0041EBE2 /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
+		0BABB55518E7FCDA0041EBE2 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
+		0BABB55618E7FCDA0041EBE2 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		0BABB55718E7FCDA0041EBE2 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
+		0BABB55818E7FCDA0041EBE2 /* AppIcon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon72x72@2x.png"; sourceTree = "<group>"; };
+		0BABB55918E7FCDA0041EBE2 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
+		0BABB55A18E7FCDA0041EBE2 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		0BABB55B18E7FCDA0041EBE2 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		0BABB55C18E7FCDA0041EBE2 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		0BABB57118E7FE5A0041EBE2 /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background1.jpg; path = Assets/background1.jpg; sourceTree = "<group>"; };
+		0BABB57218E7FE5A0041EBE2 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background2.jpg; path = Assets/background2.jpg; sourceTree = "<group>"; };
+		0BABB57518E806D40041EBE2 /* RegisterTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTypeViewController.h; sourceTree = "<group>"; };
+		0BABB57618E806D40041EBE2 /* RegisterTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTypeViewController.m; sourceTree = "<group>"; };
 		0BFA500C18E770F4005EEEF1 /* Pauperless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pauperless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFA500F18E770F4005EEEF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BFA501118E770F4005EEEF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,8 +137,6 @@
 		0BFA505818E78AA6005EEEF1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		0BFA505D18E78C75005EEEF1 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
 		0BFA505E18E78C75005EEEF1 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
-		0BFA506418E7A551005EEEF1 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddItemViewController.h; path = ../AddItemViewController.h; sourceTree = "<group>"; };
-		0BFA506518E7A551005EEEF1 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddItemViewController.m; path = ../AddItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +176,49 @@
 		0B53291818E7D9D50017EE3E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				0BABB54C18E7FCDA0041EBE2 /* App Icon [Rounded] */,
+				0BABB54718E7F4580041EBE2 /* sidewalk.png */,
+				0BABB57118E7FE5A0041EBE2 /* background1.jpg */,
+				0BABB57218E7FE5A0041EBE2 /* background2.jpg */,
 				0B53291B18E7DB280017EE3E /* pauperless_black.png */,
 				0B53291C18E7DB280017EE3E /* pauperless_white.png */,
 				0B53291D18E7DB280017EE3E /* pauperless.png */,
 				0B53291918E7D9E00017EE3E /* Cityscape.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		0BABB54318E7EE9F0041EBE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BABB54418E7EEB30041EBE2 /* ItemCell.h */,
+				0BABB54518E7EEB30041EBE2 /* ItemCell.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0BABB54C18E7FCDA0041EBE2 /* App Icon [Rounded] */ = {
+			isa = PBXGroup;
+			children = (
+				0BABB54D18E7FCDA0041EBE2 /* AppIcon29x29.png */,
+				0BABB54E18E7FCDA0041EBE2 /* AppIcon29x29@2x.png */,
+				0BABB54F18E7FCDA0041EBE2 /* AppIcon40x40.png */,
+				0BABB55018E7FCDA0041EBE2 /* AppIcon40x40@2x.png */,
+				0BABB55118E7FCDA0041EBE2 /* AppIcon50x50.png */,
+				0BABB55218E7FCDA0041EBE2 /* AppIcon50x50@2x.png */,
+				0BABB55318E7FCDA0041EBE2 /* AppIcon57x57.png */,
+				0BABB55418E7FCDA0041EBE2 /* AppIcon57x57@2x.png */,
+				0BABB55518E7FCDA0041EBE2 /* AppIcon60x60.png */,
+				0BABB55618E7FCDA0041EBE2 /* AppIcon60x60@2x.png */,
+				0BABB55718E7FCDA0041EBE2 /* AppIcon72x72.png */,
+				0BABB55818E7FCDA0041EBE2 /* AppIcon72x72@2x.png */,
+				0BABB55918E7FCDA0041EBE2 /* AppIcon76x76.png */,
+				0BABB55A18E7FCDA0041EBE2 /* AppIcon76x76@2x.png */,
+				0BABB55B18E7FCDA0041EBE2 /* iTunesArtwork.png */,
+				0BABB55C18E7FCDA0041EBE2 /* iTunesArtwork@2x.png */,
+			);
+			name = "App Icon [Rounded]";
+			path = "Assets/App Icon [Rounded]";
 			sourceTree = "<group>";
 		};
 		0BFA500318E770F4005EEEF1 = {
@@ -181,10 +265,13 @@
 		0BFA501518E770F4005EEEF1 /* Pauperless */ = {
 			isa = PBXGroup;
 			children = (
-				0BFA506418E7A551005EEEF1 /* AddItemViewController.h */,
-				0BFA506518E7A551005EEEF1 /* AddItemViewController.m */,
-				0B53291518E7D3390017EE3E /* NonProfitViewController.h */,
-				0B53291618E7D3390017EE3E /* NonProfitViewController.m */,
+				0BABB54318E7EE9F0041EBE2 /* Model */,
+				0B53292118E7DC930017EE3E /* AddItemViewController.h */,
+				0B53292218E7DC930017EE3E /* AddItemViewController.m */,
+				0B53292318E7DC930017EE3E /* NonProfitViewController.h */,
+				0B53292418E7DC930017EE3E /* NonProfitViewController.m */,
+				0BABB54918E7F78F0041EBE2 /* ItemDetails.h */,
+				0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */,
 				0BFA501E18E770F4005EEEF1 /* PauperAppDelegate.h */,
 				0BFA501F18E770F4005EEEF1 /* PauperAppDelegate.m */,
 				0BFA502118E770F4005EEEF1 /* Main.storyboard */,
@@ -192,6 +279,8 @@
 				0BFA502518E770F4005EEEF1 /* PauperViewController.m */,
 				0BFA505D18E78C75005EEEF1 /* RegistrationViewController.h */,
 				0BFA505E18E78C75005EEEF1 /* RegistrationViewController.m */,
+				0BABB57518E806D40041EBE2 /* RegisterTypeViewController.h */,
+				0BABB57618E806D40041EBE2 /* RegisterTypeViewController.m */,
 				0BFA502718E770F4005EEEF1 /* Images.xcassets */,
 				0BFA501618E770F4005EEEF1 /* Supporting Files */,
 			);
@@ -306,11 +395,30 @@
 			files = (
 				0BFA502818E770F4005EEEF1 /* Images.xcassets in Resources */,
 				0B53292018E7DB280017EE3E /* pauperless.png in Resources */,
+				0BABB55F18E7FCDA0041EBE2 /* AppIcon29x29.png in Resources */,
+				0BABB57318E7FE5A0041EBE2 /* background1.jpg in Resources */,
 				0B53291E18E7DB280017EE3E /* pauperless_black.png in Resources */,
+				0BABB56A18E7FCDA0041EBE2 /* AppIcon72x72@2x.png in Resources */,
+				0BABB56118E7FCDA0041EBE2 /* AppIcon40x40.png in Resources */,
+				0BABB56718E7FCDA0041EBE2 /* AppIcon60x60.png in Resources */,
+				0BABB54818E7F4580041EBE2 /* sidewalk.png in Resources */,
+				0BABB56418E7FCDA0041EBE2 /* AppIcon50x50@2x.png in Resources */,
+				0BABB56D18E7FCDA0041EBE2 /* iTunesArtwork.png in Resources */,
+				0BABB56B18E7FCDA0041EBE2 /* AppIcon76x76.png in Resources */,
+				0BABB56918E7FCDA0041EBE2 /* AppIcon72x72.png in Resources */,
+				0BABB56518E7FCDA0041EBE2 /* AppIcon57x57.png in Resources */,
+				0BABB56218E7FCDA0041EBE2 /* AppIcon40x40@2x.png in Resources */,
+				0BABB56818E7FCDA0041EBE2 /* AppIcon60x60@2x.png in Resources */,
 				0B53291A18E7D9E00017EE3E /* Cityscape.png in Resources */,
+				0BABB56618E7FCDA0041EBE2 /* AppIcon57x57@2x.png in Resources */,
+				0BABB57418E7FE5A0041EBE2 /* background2.jpg in Resources */,
+				0BABB56018E7FCDA0041EBE2 /* AppIcon29x29@2x.png in Resources */,
 				0BFA501A18E770F4005EEEF1 /* InfoPlist.strings in Resources */,
+				0BABB56E18E7FCDA0041EBE2 /* iTunesArtwork@2x.png in Resources */,
+				0BABB56C18E7FCDA0041EBE2 /* AppIcon76x76@2x.png in Resources */,
 				0BFA502318E770F4005EEEF1 /* Main.storyboard in Resources */,
 				0B53291F18E7DB280017EE3E /* pauperless_white.png in Resources */,
+				0BABB56318E7FCDA0041EBE2 /* AppIcon50x50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +439,13 @@
 			files = (
 				0BFA501C18E770F4005EEEF1 /* main.m in Sources */,
 				0BFA505F18E78C75005EEEF1 /* RegistrationViewController.m in Sources */,
-				0B53291718E7D3390017EE3E /* NonProfitViewController.m in Sources */,
+				0B53292618E7DC930017EE3E /* NonProfitViewController.m in Sources */,
+				0BABB54618E7EEB30041EBE2 /* ItemCell.m in Sources */,
+				0B53292518E7DC930017EE3E /* AddItemViewController.m in Sources */,
+				0BABB54B18E7F78F0041EBE2 /* ItemDetails.m in Sources */,
 				0BFA502618E770F4005EEEF1 /* PauperViewController.m in Sources */,
-				0BFA506618E7A551005EEEF1 /* AddItemViewController.m in Sources */,
 				0BFA502018E770F4005EEEF1 /* PauperAppDelegate.m in Sources */,
+				0BABB57718E806D40041EBE2 /* RegisterTypeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +577,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pauperless/Pauperless-Prefix.pch";
 				INFOPLIST_FILE = "Pauperless/Pauperless-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -483,6 +595,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pauperless/Pauperless-Prefix.pch";
 				INFOPLIST_FILE = "Pauperless/Pauperless-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

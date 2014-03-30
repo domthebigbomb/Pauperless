@@ -53,9 +53,26 @@
     _tap.enabled = NO;
 }
 
+-(BOOL)checkFields{
+    if(![_passwordTextField.text isEqualToString:_confirmPwTextField.text]){
+        return NO;
+    }else if([_passwordTextField.text isEqualToString:@""]){
+        return NO;
+    }else if([_usernameTextField.text isEqualToString:@""]){
+        return NO;
+    }else if([_emailTextField.text isEqualToString:@""]){
+        return NO;
+    }
+    
+    return YES;
+}
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    return [self checkFields];
+}
 
 - (IBAction)Register:(id)sender {
-    if(![_passwordTextField.text isEqualToString:_confirmPwTextField.text]){
+    if(![self checkFields]){
         _alertMsg = [[UIAlertView alloc] initWithTitle:@"Password Mismatch" message:@"Make sure both passwords match!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [_alertMsg show];
     }else{
@@ -85,7 +102,8 @@
                         [_alertMsg show];
                     } else {
                         NSString *errorString = [error userInfo][@"error"];
-                        // Show the errorString somewhere and let the user try again.
+                        _alertMsg = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                        [_alertMsg show];
                     }
                 }];
             }
