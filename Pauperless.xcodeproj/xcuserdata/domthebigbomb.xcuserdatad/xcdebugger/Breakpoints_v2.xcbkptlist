@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/RegistrationViewController.m"
-            timestampString = "417859919.272668"
+            timestampString = "417879435.127382"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-hideKeyboard"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/RegistrationViewController.m"
-            timestampString = "417877553.184795"
+            timestampString = "417879435.127382"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-shouldPerformSegueWithIdentifier:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/RegistrationViewController.m"
-            timestampString = "417859919.272668"
+            timestampString = "417879435.127382"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "@implementation RegistrationViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/PauperViewController.m"
-            timestampString = "417854191.374752"
+            timestampString = "417878254.142003"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "-Login:"
             landmarkType = "5">
             <Locations>
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/RegistrationViewController.m"
-            timestampString = "417877553.184795"
+            timestampString = "417879435.127382"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "-Register:"
             landmarkType = "5">
             <Locations>
@@ -198,11 +198,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/NonProfitViewController.m"
-            timestampString = "417875443.162748"
+            timestampString = "417885863.263448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -214,11 +214,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/NonProfitViewController.m"
-            timestampString = "417875443.162748"
+            timestampString = "417885863.263448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -230,11 +230,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/ItemDetails.m"
-            timestampString = "417876410.255868"
+            timestampString = "417888368.351003"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -246,11 +246,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/NonProfitViewController.m"
-            timestampString = "417875443.162748"
+            timestampString = "417885863.263448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -262,11 +262,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/PauperViewController.m"
-            timestampString = "417863670.59077"
+            timestampString = "417878254.142003"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "-Login:"
             landmarkType = "5">
          </BreakpointContent>
@@ -322,22 +322,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pauperless/NonProfitViewController.m"
-            timestampString = "417875443.162748"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -358,11 +342,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/SubscriptionViewController.m"
-            timestampString = "417875554.871876"
+            timestampString = "417885328.104317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-updateSubscription:"
             landmarkType = "5">
          </BreakpointContent>
@@ -374,13 +358,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/NonProfitViewController.m"
-            timestampString = "417875443.162748"
+            timestampString = "417885863.263448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "@implementation NonProfitViewController"
-            landmarkType = "3">
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "-create:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -436,12 +420,140 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pauperless/NonProfitViewController.m"
-            timestampString = "417875472.329033"
+            timestampString = "417885863.263448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "-refreshList"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/NonProfitViewController.m"
+            timestampString = "417885863.263448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/PauperViewController.m"
+            timestampString = "417885394.469663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-Login:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/NonProfitViewController.m"
+            timestampString = "417885466.931728"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/ItemDetails.m"
+            timestampString = "417887784.064888"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/ItemDetails.m"
+            timestampString = "417888368.351003"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-viewDidAppear:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/NonProfitViewController.m"
+            timestampString = "417887841.13831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/ItemDetails.m"
+            timestampString = "417888368.351003"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pauperless/ItemDetails.m"
+            timestampString = "417888368.351003"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

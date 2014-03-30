@@ -33,9 +33,7 @@
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    if([textField isEqual:_usernameTextField]){
-        [_passwordTextField becomeFirstResponder];
-    }else{
+    if([textField isEqual:_locationTextField]){
         [self performSelector:@selector(Register:) withObject:self];
     }
     return YES;
@@ -108,8 +106,10 @@
                 user[@"listId"] = [NSString stringWithString:listId];
                 [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                     if (!error) {
+                        /*
                         _alertMsg = [[UIAlertView alloc] initWithTitle:@"ObjectId" message:[user objectForKey:@"listId"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
                         [_alertMsg show];
+                         */
                     } else {
                         NSString *errorString = [error userInfo][@"error"];
                         _alertMsg = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];

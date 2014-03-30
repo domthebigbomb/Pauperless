@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddItemViewController : UITableViewController<UITextFieldDelegate>
+@interface AddItemViewController : UITableViewController<UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic)UITapGestureRecognizer *tap;
 @property (strong, nonatomic) UIAlertView *alertMsg;
@@ -17,5 +17,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *totalField;
 @property (weak, nonatomic) IBOutlet UITextField *availableField;
 @property (weak, nonatomic) IBOutlet UITextField *detailField;
+@property (weak, nonatomic) IBOutlet UIButton *selectPictureButton;
+@property (weak, nonatomic) IBOutlet UIImageView *itemImage;
+@property (weak, nonatomic) IBOutlet UIButton *takePictureButton;
+- (IBAction)takePhoto:  (UIButton *)sender;
+- (IBAction)selectPhoto:(UIButton *)sender;
+
 
 @end

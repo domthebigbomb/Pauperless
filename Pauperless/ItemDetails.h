@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface ItemDetails : UIViewController
+@property (strong,nonatomic) NSString *imageId;
 @property (strong,nonatomic) NSString *itemName;
 @property (strong,nonatomic) NSString *quantity;
 @property (strong,nonatomic) NSString *details;

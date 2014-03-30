@@ -11,6 +11,7 @@
 
 @interface NonProfitViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property NSString *organizationName;
 @property NSString *currItem;
 @property NSString *personalizedList;
 @property NSMutableDictionary *itemList;

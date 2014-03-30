@@ -58,6 +58,7 @@
         NSString *nonprofitName = [_nonprofitList objectAtIndex: [[self tableView] indexPathForSelectedRow].row];
         NSString *objectId = [_subscriptions objectForKey:nonprofitName];
         nonprofit.personalizedList = objectId;
+        [[NSUserDefaults standardUserDefaults] setObject:nonprofitName forKey:@"nonprofit"];
     }
 }
 

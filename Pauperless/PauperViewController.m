@@ -19,12 +19,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _masterButton.layer.cornerRadius = 3.0f;
-    _userButton.layer.cornerRadius = 3.0f;
-    _registerButton.layer.cornerRadius = 3.0f;
+    _masterButton.layer.cornerRadius = 4.0f;
+    _userButton.layer.cornerRadius = 4.0f;
+    _registerButton.layer.cornerRadius = 4.0f;
     
     
-     UIFont *font = [UIFont fontWithName:@"Avenir Medium" size:16.0f];
+    UIFont *font = [UIFont fontWithName:@"Avenir Medium" size:16.0f];
     NSDictionary *attributes = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
     [_masterSelector setTitleTextAttributes:attributes forState:UIControlStateNormal];
     
@@ -56,6 +56,8 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     if([textField isEqual:_usernameField]){
         [_passwordField becomeFirstResponder];
+    }else{
+        [self performSelector:@selector(Login:) withObject:self];
     }
     return YES;
 }
@@ -92,10 +94,11 @@
 }
 
 - (IBAction)Login:(id)sender {
-    [_masterButton setEnabled:NO];
-    [_userButton setEnabled: NO];
-    [_activityIndicator startAnimating];
-    [PFUser logInWithUsernameInBackground:_usernameField.text password:_passwordField.text block:^(PFUser *user, NSError *error) {
+    if(![_usernameField.text isEqualToString:@""] && ![_passwordField.text isEqualToString:@""]){
+        [_masterButton setEnabled:NO];
+        [_userButton setEnabled: NO];
+        [_activityIndicator startAnimating];
+        [PFUser logInWithUsernameInBackground:_usernameField.text password:_passwordField.text block:^(PFUser *user, NSError *error) {
             if (user) {
                 NSNumber *isMaster = (NSNumber *)[user objectForKey: @"is_master"];
                 if ([isMaster boolValue]== [_userButton isHidden]){
@@ -103,6 +106,7 @@
                     [[NSUserDefaults standardUserDefaults] setObject:user.username forKey:@"username"];
                     if([isMaster boolValue]){
                         [self performSegueWithIdentifier:@"GoMaster" sender:self];
+                        [[NSUserDefaults standardUserDefaults] setObject:[user objectForKey:@"organization_name"] forKey:@"nonprofit"];
                         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"is_master"];
                         [[NSUserDefaults standardUserDefaults] setObject:[user objectForKey:@"listId"] forKey:@"objectId"];
                         [_activityIndicator stopAnimating];
@@ -114,15 +118,25 @@
                     }
                 }else{
                     NSLog(@"Type of account did not match credentials");
+                    _alertMsg = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Invalid Login Credentials" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                    [_alertMsg show];
+                    [_masterButton setEnabled: YES];
+                    [_userButton setEnabled: YES];
+                    [_activityIndicator stopAnimating];
                 }
             } else {
+                _alertMsg = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Invalid Login Credentials" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                [_alertMsg show];
                 [_masterButton setEnabled: YES];
                 [_userButton setEnabled: YES];
                 [_activityIndicator stopAnimating];
                 _validLogin = NO;
             }
         }];
-    
+    }else{
+        _alertMsg = [[UIAlertView alloc] initWithTitle:@"User Error" message:@"Please fill out both username and password" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [_alertMsg show];
+    }
     
 }
 @end
