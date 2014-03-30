@@ -90,8 +90,14 @@
         user[@"listId"] = @"n/a";
         
         NSMutableDictionary *itemList = [[NSMutableDictionary alloc] init];
-        PFObject *newItem = [PFObject objectWithClassName:@"itemList"];
-        newItem[@"properties"] = itemList;
+        PFObject *newItem;
+        if(_isMaster){
+            newItem = [PFObject objectWithClassName:@"itemList"];
+            newItem[@"properties"] = itemList;
+        }else{
+            newItem = [PFObject objectWithClassName:@"subscriptions"];
+            newItem[@"nonprofitList"] = itemList;
+        }
         
         [newItem saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (succeeded) {

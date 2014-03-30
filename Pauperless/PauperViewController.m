@@ -101,17 +101,13 @@
                 if ([isMaster boolValue]== [_userButton isHidden]){
                     _validLogin = YES;
                     [[NSUserDefaults standardUserDefaults] setObject:user.username forKey:@"username"];
-                    if(isMaster){
+                    if([isMaster boolValue]){
                         [self performSegueWithIdentifier:@"GoMaster" sender:self];
                         [[NSUserDefaults standardUserDefaults] setObject:[user objectForKey:@"listId"] forKey:@"objectId"];
-                        /*
-                        _alertMsg = [[UIAlertView alloc] initWithTitle:@"ObjectId" message:[user objectForKey:@"listId"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
-                        [_alertMsg show];
-                         */
-                        
                         [_activityIndicator stopAnimating];
                     }else{
                         [self performSegueWithIdentifier:@"GoUser" sender:self];
+                        [[NSUserDefaults standardUserDefaults] setObject:[user objectForKey:@"listId"] forKey:@"subscription"];
                         [_activityIndicator stopAnimating];
                     }
                 }else{

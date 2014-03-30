@@ -13,6 +13,9 @@
 		0B53292018E7DB280017EE3E /* pauperless.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291D18E7DB280017EE3E /* pauperless.png */; };
 		0B53292518E7DC930017EE3E /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B53292218E7DC930017EE3E /* AddItemViewController.m */; };
 		0B53292618E7DC930017EE3E /* NonProfitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B53292418E7DC930017EE3E /* NonProfitViewController.m */; };
+		0B7B03FA18E80EC3000AA3FF /* SubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B03F918E80EC3000AA3FF /* SubscriptionViewController.m */; };
+		0B7B03FD18E812C9000AA3FF /* NonprofitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B03FC18E812C9000AA3FF /* NonprofitCell.m */; };
+		0B7B040018E814C7000AA3FF /* ManageSubscriptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B03FF18E814C7000AA3FF /* ManageSubscriptionsViewController.m */; };
 		0BABB54618E7EEB30041EBE2 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABB54518E7EEB30041EBE2 /* ItemCell.m */; };
 		0BABB54818E7F4580041EBE2 /* sidewalk.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB54718E7F4580041EBE2 /* sidewalk.png */; };
 		0BABB54B18E7F78F0041EBE2 /* ItemDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */; };
@@ -81,6 +84,12 @@
 		0B53292218E7DC930017EE3E /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		0B53292318E7DC930017EE3E /* NonProfitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonProfitViewController.h; sourceTree = "<group>"; };
 		0B53292418E7DC930017EE3E /* NonProfitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonProfitViewController.m; sourceTree = "<group>"; };
+		0B7B03F818E80EC3000AA3FF /* SubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionViewController.h; sourceTree = "<group>"; };
+		0B7B03F918E80EC3000AA3FF /* SubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionViewController.m; sourceTree = "<group>"; };
+		0B7B03FB18E812C9000AA3FF /* NonprofitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonprofitCell.h; sourceTree = "<group>"; };
+		0B7B03FC18E812C9000AA3FF /* NonprofitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonprofitCell.m; sourceTree = "<group>"; };
+		0B7B03FE18E814C7000AA3FF /* ManageSubscriptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageSubscriptionsViewController.h; sourceTree = "<group>"; };
+		0B7B03FF18E814C7000AA3FF /* ManageSubscriptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageSubscriptionsViewController.m; sourceTree = "<group>"; };
 		0BABB54418E7EEB30041EBE2 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		0BABB54518E7EEB30041EBE2 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		0BABB54718E7F4580041EBE2 /* sidewalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidewalk.png; path = Assets/sidewalk.png; sourceTree = "<group>"; };
@@ -193,6 +202,8 @@
 			children = (
 				0BABB54418E7EEB30041EBE2 /* ItemCell.h */,
 				0BABB54518E7EEB30041EBE2 /* ItemCell.m */,
+				0B7B03FB18E812C9000AA3FF /* NonprofitCell.h */,
+				0B7B03FC18E812C9000AA3FF /* NonprofitCell.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -271,10 +282,14 @@
 				0B53292318E7DC930017EE3E /* NonProfitViewController.h */,
 				0B53292418E7DC930017EE3E /* NonProfitViewController.m */,
 				0BABB54918E7F78F0041EBE2 /* ItemDetails.h */,
+				0B7B03FE18E814C7000AA3FF /* ManageSubscriptionsViewController.h */,
+				0B7B03FF18E814C7000AA3FF /* ManageSubscriptionsViewController.m */,
 				0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */,
 				0BFA501E18E770F4005EEEF1 /* PauperAppDelegate.h */,
 				0BFA501F18E770F4005EEEF1 /* PauperAppDelegate.m */,
 				0BFA502118E770F4005EEEF1 /* Main.storyboard */,
+				0B7B03F818E80EC3000AA3FF /* SubscriptionViewController.h */,
+				0B7B03F918E80EC3000AA3FF /* SubscriptionViewController.m */,
 				0BFA502418E770F4005EEEF1 /* PauperViewController.h */,
 				0BFA502518E770F4005EEEF1 /* PauperViewController.m */,
 				0BFA505D18E78C75005EEEF1 /* RegistrationViewController.h */,
@@ -439,11 +454,14 @@
 			files = (
 				0BFA501C18E770F4005EEEF1 /* main.m in Sources */,
 				0BFA505F18E78C75005EEEF1 /* RegistrationViewController.m in Sources */,
+				0B7B040018E814C7000AA3FF /* ManageSubscriptionsViewController.m in Sources */,
 				0B53292618E7DC930017EE3E /* NonProfitViewController.m in Sources */,
+				0B7B03FA18E80EC3000AA3FF /* SubscriptionViewController.m in Sources */,
 				0BABB54618E7EEB30041EBE2 /* ItemCell.m in Sources */,
 				0B53292518E7DC930017EE3E /* AddItemViewController.m in Sources */,
 				0BABB54B18E7F78F0041EBE2 /* ItemDetails.m in Sources */,
 				0BFA502618E770F4005EEEF1 /* PauperViewController.m in Sources */,
+				0B7B03FD18E812C9000AA3FF /* NonprofitCell.m in Sources */,
 				0BFA502018E770F4005EEEF1 /* PauperAppDelegate.m in Sources */,
 				0BABB57718E806D40041EBE2 /* RegisterTypeViewController.m in Sources */,
 			);
