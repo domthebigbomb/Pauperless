@@ -43,16 +43,21 @@
     // Dispose of any resources that can be recreated.
 }
 
--(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-    return (_validLogin) ? YES : NO;
-}
-
 - (IBAction)Login:(id)sender {
     [PFUser logInWithUsernameInBackground:_usernameField.text password:_passwordField.text block:^(PFUser *user, NSError *error) {
             if (user) {
                 NSNumber *isMaster = (NSNumber *)[user objectForKey: @"is_master"];
-                if ([isMaster boolValue]== [_masterSelector isHidden]){
+                if ([isMaster boolValue]== [_userButton isHidden]){
                     _validLogin = YES;
+                    [[NSUserDefaults standardUserDefaults] setObject:user.username forKey:@"username"];
+                    if(isMaster){
+                        [self performSegueWithIdentifier:@"GoMaster" sender:self];
+                        [[NSUserDefaults standardUserDefaults] setObject:[user objectForKey:@"listId"] forKey:@"objectId"];
+                        _alertMsg = [[UIAlertView alloc] initWithTitle:@"ObjectId" message:[user objectForKey:@"listId"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                        [_alertMsg show];
+                    }else{
+                        [self performSegueWithIdentifier:@"GoUser" sender:self];
+                    }
                 }else{
                     NSLog(@"Type of account did not match credentials");
                 }

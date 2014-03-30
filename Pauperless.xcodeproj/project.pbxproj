@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B53291718E7D3390017EE3E /* NonProfitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B53291618E7D3390017EE3E /* NonProfitViewController.m */; };
 		0BFA501018E770F4005EEEF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA500F18E770F4005EEEF1 /* Foundation.framework */; };
 		0BFA501218E770F4005EEEF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA501118E770F4005EEEF1 /* CoreGraphics.framework */; };
 		0BFA501418E770F4005EEEF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA501318E770F4005EEEF1 /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B53291518E7D3390017EE3E /* NonProfitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NonProfitViewController.h; path = ../NonProfitViewController.h; sourceTree = "<group>"; };
+		0B53291618E7D3390017EE3E /* NonProfitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NonProfitViewController.m; path = ../NonProfitViewController.m; sourceTree = "<group>"; };
 		0BFA500C18E770F4005EEEF1 /* Pauperless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pauperless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFA500F18E770F4005EEEF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BFA501118E770F4005EEEF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,8 @@
 			children = (
 				0BFA506418E7A551005EEEF1 /* AddItemViewController.h */,
 				0BFA506518E7A551005EEEF1 /* AddItemViewController.m */,
+				0B53291518E7D3390017EE3E /* NonProfitViewController.h */,
+				0B53291618E7D3390017EE3E /* NonProfitViewController.m */,
 				0BFA501E18E770F4005EEEF1 /* PauperAppDelegate.h */,
 				0BFA501F18E770F4005EEEF1 /* PauperAppDelegate.m */,
 				0BFA502118E770F4005EEEF1 /* Main.storyboard */,
@@ -302,6 +307,7 @@
 			files = (
 				0BFA501C18E770F4005EEEF1 /* main.m in Sources */,
 				0BFA505F18E78C75005EEEF1 /* RegistrationViewController.m in Sources */,
+				0B53291718E7D3390017EE3E /* NonProfitViewController.m in Sources */,
 				0BFA502618E770F4005EEEF1 /* PauperViewController.m in Sources */,
 				0BFA506618E7A551005EEEF1 /* AddItemViewController.m in Sources */,
 				0BFA502018E770F4005EEEF1 /* PauperAppDelegate.m in Sources */,
@@ -517,6 +523,7 @@
 				0BFA504018E770F4005EEEF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BFA504118E770F4005EEEF1 /* Build configuration list for PBXNativeTarget "PauperlessTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +532,7 @@
 				0BFA504318E770F4005EEEF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

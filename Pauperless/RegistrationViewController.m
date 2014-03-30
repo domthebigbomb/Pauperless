@@ -69,15 +69,29 @@
         user[@"website"] = (_websiteTextField == nil) ? [NSNull null]: _websiteTextField.text;
         user[@"organization_name"] = (_organizationTextField == nil) ? [NSNull null] : _organizationTextField.text;
         user[@"location"] = (_locationTextField == nil) ? [NSNull null] : _locationTextField.text;
+        user[@"listId"] = @"n/a";
         
-        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (!error) {
-                // Hooray! Let them use the app now.
-            } else {
-                NSString *errorString = [error userInfo][@"error"];
-                    // Show the errorString somewhere and let the user try again.
+        NSMutableDictionary *itemList = [[NSMutableDictionary alloc] init];
+        PFObject *newItem = [PFObject objectWithClassName:@"itemList"];
+        newItem[@"properties"] = itemList;
+        
+        [newItem saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                NSString *listId = [newItem objectId];
+                user[@"listId"] = [NSString stringWithString:listId];
+                [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (!error) {
+                        _alertMsg = [[UIAlertView alloc] initWithTitle:@"ObjectId" message:[user objectForKey:@"listId"] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                        [_alertMsg show];
+                    } else {
+                        NSString *errorString = [error userInfo][@"error"];
+                        // Show the errorString somewhere and let the user try again.
+                    }
+                }];
             }
         }];
+        
+        
     }
 }
 @end

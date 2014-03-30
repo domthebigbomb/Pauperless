@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-@interface PauperViewController : UIViewController
+@interface PauperViewController : UIViewController<UIAlertViewDelegate>
 
 -(IBAction)goHome:(UIStoryboardSegue *)segue;
 - (IBAction)toggleMaster:(id)sender;
 
 @property BOOL validLogin;
+@property (strong, nonatomic) UIAlertView *alertMsg;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *masterSelector;
 @property (weak, nonatomic) IBOutlet UIButton *masterButton;
 @property (weak, nonatomic) IBOutlet UIButton *userButton;
