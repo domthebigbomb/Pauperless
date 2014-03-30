@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *quantityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *itemImage;
+@property (weak, nonatomic) IBOutlet UIButton *reserveButton;
 - (IBAction)editItem:(id)sender;
 
 @end

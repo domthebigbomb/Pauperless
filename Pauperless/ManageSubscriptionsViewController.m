@@ -15,6 +15,7 @@
     [super viewDidLoad];
     _nonprofitList = [[NSArray alloc] init];
     _nonprofitDict = [[NSMutableDictionary alloc] init];
+    _personalSub = [[NSMutableDictionary alloc] initWithDictionary:_personalSub copyItems:YES];
     [[self refreshControl] addTarget:self action:@selector(refreshNonprofits) forControlEvents:UIControlEventValueChanged];
     [self performSelector:@selector(refreshNonprofits)];
 }
@@ -45,6 +46,17 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell =  [tableView cellForRowAtIndexPath:indexPath];
+    PFUser *user =[_nonprofitList objectAtIndex:indexPath.row];
+    if([cell accessoryType] == UITableViewCellAccessoryCheckmark){
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
+        [tableView deselectRowAtIndexPath:indexPath animated:NO];
+        [_personalSub removeObjectForKey:[user objectForKey:@"organization_name"]];
+    }else{
+        [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+        [tableView deselectRowAtIndexPath:indexPath animated:NO];
+        [_personalSub setObject:[user objectForKey:@"listId"] forKey:[user objectForKey:@"organization_name"]];
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

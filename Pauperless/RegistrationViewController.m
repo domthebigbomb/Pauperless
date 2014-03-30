@@ -69,6 +69,9 @@
 }
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    if([identifier isEqualToString:@"goAccount"]){
+        return YES;
+    }
     return [self checkFields];
 }
 
@@ -91,12 +94,12 @@
         
         NSMutableDictionary *itemList = [[NSMutableDictionary alloc] init];
         PFObject *newItem;
-        if(_isMaster){
+        if([_isMaster boolValue]){
             newItem = [PFObject objectWithClassName:@"itemList"];
             newItem[@"properties"] = itemList;
         }else{
             newItem = [PFObject objectWithClassName:@"subscriptions"];
-            newItem[@"nonprofitList"] = itemList;
+            newItem[@"nonprofits"] = itemList;
         }
         
         [newItem saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

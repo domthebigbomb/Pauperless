@@ -103,10 +103,12 @@
                     [[NSUserDefaults standardUserDefaults] setObject:user.username forKey:@"username"];
                     if([isMaster boolValue]){
                         [self performSegueWithIdentifier:@"GoMaster" sender:self];
+                        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"is_master"];
                         [[NSUserDefaults standardUserDefaults] setObject:[user objectForKey:@"listId"] forKey:@"objectId"];
                         [_activityIndicator stopAnimating];
                     }else{
                         [self performSegueWithIdentifier:@"GoUser" sender:self];
+                        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"is_master"];
                         [[NSUserDefaults standardUserDefaults] setObject:[user objectForKey:@"listId"] forKey:@"subscription"];
                         [_activityIndicator stopAnimating];
                     }

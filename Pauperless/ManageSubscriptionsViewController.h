@@ -12,6 +12,8 @@
 @interface ManageSubscriptionsViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property NSArray *nonprofitList;
+@property NSDictionary *preSubsubscribed;
 @property NSMutableDictionary *nonprofitDict;
+@property NSMutableDictionary *personalSub;
 
 @end

@@ -14,4 +14,8 @@
 @property NSString *subscriptionID;
 @property NSArray *nonprofitList;
 @property NSDictionary *subscriptions;
+-(IBAction)subscriptionHome:(UIStoryboardSegue *)segue;
+-(IBAction)updateSubscription:(UIStoryboardSegue *)segue;
+
+
 @end

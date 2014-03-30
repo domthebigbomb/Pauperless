@@ -11,5 +11,9 @@
 @interface RegisterTypeViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *userButton;
 @property (weak, nonatomic) IBOutlet UIButton *nonprofitButton;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+
+-(IBAction)goAccount:(UIStoryboardSegue *)segue;
+
 
 @end

@@ -14,6 +14,9 @@
     [[self navigationController] setTitle:_itemName];
     [_quantityLabel setText: _quantity];
     [_detailLabel setText:_details];
+    if(_reserveButton){
+        _reserveButton.layer.cornerRadius = 5.0f;
+    }
 }
 
 - (IBAction)editItem:(id)sender {

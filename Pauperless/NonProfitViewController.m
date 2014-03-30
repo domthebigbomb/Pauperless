@@ -15,7 +15,10 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    _personalizedList = [[NSUserDefaults standardUserDefaults] stringForKey:@"objectId"];
+    BOOL isMaster = [[NSUserDefaults standardUserDefaults] boolForKey:@"is_master"];
+    if(isMaster){
+        _personalizedList = [[NSUserDefaults standardUserDefaults] stringForKey:@"objectId"];
+    }
     _itemList = [[NSMutableDictionary alloc] init];
     _items = [[NSMutableArray alloc] init];
     _currItem = [[NSString alloc] init];

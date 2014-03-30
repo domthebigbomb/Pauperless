@@ -16,6 +16,8 @@
 		0B7B03FA18E80EC3000AA3FF /* SubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B03F918E80EC3000AA3FF /* SubscriptionViewController.m */; };
 		0B7B03FD18E812C9000AA3FF /* NonprofitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B03FC18E812C9000AA3FF /* NonprofitCell.m */; };
 		0B7B040018E814C7000AA3FF /* ManageSubscriptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B03FF18E814C7000AA3FF /* ManageSubscriptionsViewController.m */; };
+		0B7B040318E84B3E000AA3FF /* Background Leaves.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7B040118E84B3E000AA3FF /* Background Leaves.png */; };
+		0B7B040418E84B3E000AA3FF /* ProfitOrUser.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7B040218E84B3E000AA3FF /* ProfitOrUser.png */; };
 		0BABB54618E7EEB30041EBE2 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABB54518E7EEB30041EBE2 /* ItemCell.m */; };
 		0BABB54818E7F4580041EBE2 /* sidewalk.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BABB54718E7F4580041EBE2 /* sidewalk.png */; };
 		0BABB54B18E7F78F0041EBE2 /* ItemDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */; };
@@ -90,6 +92,8 @@
 		0B7B03FC18E812C9000AA3FF /* NonprofitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonprofitCell.m; sourceTree = "<group>"; };
 		0B7B03FE18E814C7000AA3FF /* ManageSubscriptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageSubscriptionsViewController.h; sourceTree = "<group>"; };
 		0B7B03FF18E814C7000AA3FF /* ManageSubscriptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageSubscriptionsViewController.m; sourceTree = "<group>"; };
+		0B7B040118E84B3E000AA3FF /* Background Leaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background Leaves.png"; path = "Assets/Background Leaves.png"; sourceTree = "<group>"; };
+		0B7B040218E84B3E000AA3FF /* ProfitOrUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ProfitOrUser.png; path = Assets/ProfitOrUser.png; sourceTree = "<group>"; };
 		0BABB54418E7EEB30041EBE2 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		0BABB54518E7EEB30041EBE2 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		0BABB54718E7F4580041EBE2 /* sidewalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidewalk.png; path = Assets/sidewalk.png; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 				0B53291C18E7DB280017EE3E /* pauperless_white.png */,
 				0B53291D18E7DB280017EE3E /* pauperless.png */,
 				0B53291918E7D9E00017EE3E /* Cityscape.png */,
+				0B7B040118E84B3E000AA3FF /* Background Leaves.png */,
+				0B7B040218E84B3E000AA3FF /* ProfitOrUser.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -282,9 +288,9 @@
 				0B53292318E7DC930017EE3E /* NonProfitViewController.h */,
 				0B53292418E7DC930017EE3E /* NonProfitViewController.m */,
 				0BABB54918E7F78F0041EBE2 /* ItemDetails.h */,
+				0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */,
 				0B7B03FE18E814C7000AA3FF /* ManageSubscriptionsViewController.h */,
 				0B7B03FF18E814C7000AA3FF /* ManageSubscriptionsViewController.m */,
-				0BABB54A18E7F78F0041EBE2 /* ItemDetails.m */,
 				0BFA501E18E770F4005EEEF1 /* PauperAppDelegate.h */,
 				0BFA501F18E770F4005EEEF1 /* PauperAppDelegate.m */,
 				0BFA502118E770F4005EEEF1 /* Main.storyboard */,
@@ -415,6 +421,7 @@
 				0B53291E18E7DB280017EE3E /* pauperless_black.png in Resources */,
 				0BABB56A18E7FCDA0041EBE2 /* AppIcon72x72@2x.png in Resources */,
 				0BABB56118E7FCDA0041EBE2 /* AppIcon40x40.png in Resources */,
+				0B7B040418E84B3E000AA3FF /* ProfitOrUser.png in Resources */,
 				0BABB56718E7FCDA0041EBE2 /* AppIcon60x60.png in Resources */,
 				0BABB54818E7F4580041EBE2 /* sidewalk.png in Resources */,
 				0BABB56418E7FCDA0041EBE2 /* AppIcon50x50@2x.png in Resources */,
@@ -423,6 +430,7 @@
 				0BABB56918E7FCDA0041EBE2 /* AppIcon72x72.png in Resources */,
 				0BABB56518E7FCDA0041EBE2 /* AppIcon57x57.png in Resources */,
 				0BABB56218E7FCDA0041EBE2 /* AppIcon40x40@2x.png in Resources */,
+				0B7B040318E84B3E000AA3FF /* Background Leaves.png in Resources */,
 				0BABB56818E7FCDA0041EBE2 /* AppIcon60x60@2x.png in Resources */,
 				0B53291A18E7D9E00017EE3E /* Cityscape.png in Resources */,
 				0BABB56618E7FCDA0041EBE2 /* AppIcon57x57@2x.png in Resources */,

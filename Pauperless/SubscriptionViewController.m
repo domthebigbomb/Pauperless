@@ -8,6 +8,8 @@
 
 #import "SubscriptionViewController.h"
 #import "NonprofitCell.h"
+#import "ManageSubscriptionsViewController.h"
+#import "NonProfitViewController.h"
 
 @implementation SubscriptionViewController
 
@@ -24,7 +26,7 @@
 -(void)refreshSubscriptions{
     PFQuery *query = [[PFQuery alloc] initWithClassName:@"subscriptions"];
     [query getObjectInBackgroundWithId:_subscriptionID block:^(PFObject *subs, NSError *error) {
-        _subscriptions = [NSDictionary dictionaryWithDictionary: (NSDictionary *)subs];
+        _subscriptions = [NSDictionary dictionaryWithDictionary: [subs objectForKey:@"nonprofits"]];
         _nonprofitList = [NSArray arrayWithArray:[_subscriptions allKeys]];
         [[self refreshControl] endRefreshing];
         [[self tableView] reloadData];
@@ -49,5 +51,36 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [_nonprofitList count];
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"nonprofitItems"]){
+        NonProfitViewController *nonprofit = (NonProfitViewController *)[segue destinationViewController];
+        NSString *nonprofitName = [_nonprofitList objectAtIndex: [[self tableView] indexPathForSelectedRow].row];
+        NSString *objectId = [_subscriptions objectForKey:nonprofitName];
+        nonprofit.personalizedList = objectId;
+    }
+}
+
+-(IBAction)subscriptionHome:(UIStoryboardSegue *)segue{
+    
+}
+
+-(IBAction)updateSubscription:(UIStoryboardSegue *)segue{
+    ManageSubscriptionsViewController *controller = (ManageSubscriptionsViewController *)[segue sourceViewController];
+    NSDictionary *newSubs = [[NSDictionary alloc] initWithDictionary:controller.personalSub];
+    PFQuery *query = [[PFQuery alloc] initWithClassName:@"subscriptions"];
+    [query getObjectInBackgroundWithId:_subscriptionID block:^(PFObject *oldSubs, NSError *error) {
+        if(!error){
+            oldSubs[@"nonprofits"] = newSubs;
+            [oldSubs saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if(succeeded){
+                    [self refreshSubscriptions];
+                }
+            }];
+        }
+    }];
+    
+}
+
 
 @end
