@@ -243,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="367" y="348"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Type View Controller-->
         <scene sceneID="H6m-tj-zp5">
             <objects>
-                <viewController id="9xU-l1-ilU" sceneMemberID="viewController">
+                <viewController id="9xU-l1-ilU" customClass="RegisterTypeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CLb-uj-TiD"/>
                         <viewControllerLayoutGuide type="bottom" id="PTc-cK-K2c"/>
@@ -266,12 +266,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82M-AK-mSh">
-                                <rect key="frame" x="95" y="244" width="131" height="40"/>
+                                <rect key="frame" x="39" y="244" width="232" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="backgroundColor" red="0.03529411927" green="0.27843138579999999" blue="0.5176470876" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="User">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -279,12 +279,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMo-fZ-Fk3">
-                                <rect key="frame" x="95" y="304" width="131" height="40"/>
+                                <rect key="frame" x="39" y="304" width="232" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="backgroundColor" red="0.03529411927" green="0.27843138579999999" blue="0.5176470876" alpha="0.80000000000000004" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
                                 <state key="normal" title="Non-Profit">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -292,7 +292,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TN1-e1-Vyr">
-                                <rect key="frame" x="125" y="360" width="71" height="30"/>
+                                <rect key="frame" x="39" y="360" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="Cancel">
@@ -306,6 +306,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.50980395079999996" green="0.80000007149999997" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="nonprofitButton" destination="mMo-fZ-Fk3" id="Ih8-Je-RdS"/>
+                        <outlet property="userButton" destination="82M-AK-mSh" id="DMy-T2-vj8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cS-wt-mrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="JsO-7P-C4u" userLabel="Exit" sceneMemberID="exit"/>
@@ -379,7 +383,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLL-Il-GJA">
                                 <rect key="frame" x="67" y="255" width="186" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.03529411927" green="0.27843138579999999" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
@@ -397,6 +401,7 @@
                         <outlet property="confirmPwTextField" destination="fQN-QO-M7o" id="6LS-dn-71s"/>
                         <outlet property="emailTextField" destination="KrI-Pv-ZbA" id="f9g-GZ-h6j"/>
                         <outlet property="passwordTextField" destination="iX4-o5-Ocz" id="yRh-lK-31p"/>
+                        <outlet property="registerButton" destination="bLL-Il-GJA" id="3QJ-fQ-Kyk"/>
                         <outlet property="usernameTextField" destination="Yh8-YI-lpo" id="yBm-e8-ATb"/>
                     </connections>
                 </viewController>
@@ -773,7 +778,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a28-1Q-GqF">
                                 <rect key="frame" x="53" y="359" width="200" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.03529411927" green="0.27843138579999999" blue="0.5176470876" alpha="1" colorSpace="deviceRGB"/>
@@ -820,6 +825,7 @@
                         <outlet property="locationTextField" destination="6aN-ih-Rfe" id="miY-uM-tKp"/>
                         <outlet property="organizationTextField" destination="p3h-91-tNA" id="aM1-Wf-ZFF"/>
                         <outlet property="passwordTextField" destination="IHI-iv-KQL" id="ap6-K5-Nfk"/>
+                        <outlet property="registerButton" destination="a28-1Q-GqF" id="zxC-6s-UiR"/>
                         <outlet property="usernameTextField" destination="x43-jK-esu" id="Nea-9W-DOF"/>
                         <outlet property="websiteTextField" destination="Vki-SI-VR0" id="zxI-R9-hgi"/>
                     </connections>

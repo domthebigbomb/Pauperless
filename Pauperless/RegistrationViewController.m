@@ -17,6 +17,7 @@
     _isMaster = ([self.restorationIdentifier isEqualToString:@"master"]) ? @YES : @NO;
     _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     _tap.enabled = NO;
+    _registerButton.layer.cornerRadius = 4.0f;
     [self.view addGestureRecognizer:_tap];
 }
 
