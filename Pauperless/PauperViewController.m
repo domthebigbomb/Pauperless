@@ -17,6 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _masterButton.layer.cornerRadius = 3.0f;
+    _userButton.layer.cornerRadius = 3.0f;
+    _
     _validLogin = NO;
 	// Do any additional setup after loading the view, typically from a nib.
 }
