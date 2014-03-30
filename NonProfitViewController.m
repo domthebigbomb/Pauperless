@@ -24,6 +24,7 @@
 -(IBAction)create:(UIStoryboardSegue *)segue{
     AddItemViewController *addView = [segue sourceViewController];
     NSMutableDictionary *newProperties = [[NSMutableDictionary alloc] init];
+    
     [newProperties setObject:addView.nameField.text forKey:@"itemName"];
     [newProperties setObject:addView.totalField.text forKey:@"totalAmt"];
     [newProperties setObject:addView.availableField.text forKey:@"available"];
@@ -36,7 +37,9 @@
         
         // Now let's update it with some new data. In this case, only cheatMode and score
         // will get sent to the cloud. playerName hasn't changed.
-        itemList[@"properties"] = newProperties;
+        NSMutableDictionary *oldProperties = [[NSMutableDictionary alloc] initWithDictionary:[itemList objectForKey:@"properties"]];
+        [oldProperties setObject:newProperties forKey:addView.nameField.text];
+        itemList[@"properties"] = oldProperties;
         [itemList saveInBackground];
         
     }];

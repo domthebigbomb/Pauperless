@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0B53291718E7D3390017EE3E /* NonProfitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B53291618E7D3390017EE3E /* NonProfitViewController.m */; };
+		0B53291A18E7D9E00017EE3E /* Cityscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291918E7D9E00017EE3E /* Cityscape.png */; };
+		0B53291E18E7DB280017EE3E /* pauperless_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291B18E7DB280017EE3E /* pauperless_black.png */; };
+		0B53291F18E7DB280017EE3E /* pauperless_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291C18E7DB280017EE3E /* pauperless_white.png */; };
+		0B53292018E7DB280017EE3E /* pauperless.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53291D18E7DB280017EE3E /* pauperless.png */; };
 		0BFA501018E770F4005EEEF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA500F18E770F4005EEEF1 /* Foundation.framework */; };
 		0BFA501218E770F4005EEEF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA501118E770F4005EEEF1 /* CoreGraphics.framework */; };
 		0BFA501418E770F4005EEEF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFA501318E770F4005EEEF1 /* UIKit.framework */; };
@@ -49,6 +53,10 @@
 /* Begin PBXFileReference section */
 		0B53291518E7D3390017EE3E /* NonProfitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NonProfitViewController.h; path = ../NonProfitViewController.h; sourceTree = "<group>"; };
 		0B53291618E7D3390017EE3E /* NonProfitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NonProfitViewController.m; path = ../NonProfitViewController.m; sourceTree = "<group>"; };
+		0B53291918E7D9E00017EE3E /* Cityscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cityscape.png; path = Assets/Cityscape.png; sourceTree = "<group>"; };
+		0B53291B18E7DB280017EE3E /* pauperless_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauperless_black.png; path = Assets/pauperless_black.png; sourceTree = "<group>"; };
+		0B53291C18E7DB280017EE3E /* pauperless_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauperless_white.png; path = Assets/pauperless_white.png; sourceTree = "<group>"; };
+		0B53291D18E7DB280017EE3E /* pauperless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauperless.png; path = Assets/pauperless.png; sourceTree = "<group>"; };
 		0BFA500C18E770F4005EEEF1 /* Pauperless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pauperless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFA500F18E770F4005EEEF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BFA501118E770F4005EEEF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,9 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B53291818E7D9D50017EE3E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0B53291B18E7DB280017EE3E /* pauperless_black.png */,
+				0B53291C18E7DB280017EE3E /* pauperless_white.png */,
+				0B53291D18E7DB280017EE3E /* pauperless.png */,
+				0B53291918E7D9E00017EE3E /* Cityscape.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		0BFA500318E770F4005EEEF1 = {
 			isa = PBXGroup;
 			children = (
+				0B53291818E7D9D50017EE3E /* Assets */,
 				0BFA501518E770F4005EEEF1 /* Pauperless */,
 				0BFA503418E770F4005EEEF1 /* PauperlessTests */,
 				0BFA500E18E770F4005EEEF1 /* Frameworks */,
@@ -285,8 +305,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFA502818E770F4005EEEF1 /* Images.xcassets in Resources */,
+				0B53292018E7DB280017EE3E /* pauperless.png in Resources */,
+				0B53291E18E7DB280017EE3E /* pauperless_black.png in Resources */,
+				0B53291A18E7D9E00017EE3E /* Cityscape.png in Resources */,
 				0BFA501A18E770F4005EEEF1 /* InfoPlist.strings in Resources */,
 				0BFA502318E770F4005EEEF1 /* Main.storyboard in Resources */,
+				0B53291F18E7DB280017EE3E /* pauperless_white.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
