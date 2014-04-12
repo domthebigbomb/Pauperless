@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03D5CEEF-A4CE-4A88-A251-5C352977B901</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pauperless</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F970B192-EF65-4FA1-999F-D5F3D5CAF80C</key>
+		<string>https://github.com/domthebigbomb/Pauperless.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pauperless.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F970B192-EF65-4FA1-999F-D5F3D5CAF80C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/domthebigbomb/Pauperless.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F970B192-EF65-4FA1-999F-D5F3D5CAF80C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F970B192-EF65-4FA1-999F-D5F3D5CAF80C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pauperless</string>
+		</dict>
+	</array>
+</dict>
+</plist>

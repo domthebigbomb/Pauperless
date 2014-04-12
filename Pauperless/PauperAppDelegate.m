@@ -9,13 +9,21 @@
 #import "PauperAppDelegate.h"
 #import <Parse/Parse.h>
 
-@implementation PauperAppDelegate
+@implementation PauperAppDelegate{
+    id services_;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Parse setApplicationId:@"Uva6J8rIk2Fl4NGZr4mweB7vPDN5G8wfDAe33sPU"
         clientKey:@"BW1TAKoc4yHVsyjRIdGi9wrs1kOQsCXQ8ABhEGMI"];
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [GMSServices provideAPIKey:kAPIKey];
+    services_ = [GMSServices sharedServices];
     
     return YES;
 }
@@ -30,6 +38,20 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

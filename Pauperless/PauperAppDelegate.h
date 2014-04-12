@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PauperlessMapApiKey.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface PauperAppDelegate : UIResponder <UIApplicationDelegate>
 

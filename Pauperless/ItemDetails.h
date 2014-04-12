@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <CoreLocation/CoreLocation.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import <GoogleMapsDirection/GMDirection.h>
+#import <GoogleMapsDirection/GMDirectionService.h>
+#import <GoogleMapsDirection/GMHTTPClient.h>
 
 @interface ItemDetails : UIViewController
 @property (strong,nonatomic) NSString *imageId;
