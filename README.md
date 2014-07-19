@@ -9,4 +9,5 @@ Shelters will be able to update inventory of items and resources. They will even
 Users will be able to access this information and inform those in need about potential resources they can access
 
 iOS Dev: Dominic Ong
+
 Designers: Evan Qi and Tony Liang
